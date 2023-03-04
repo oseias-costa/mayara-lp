@@ -1,20 +1,26 @@
-import React from 'react'
-import localFont from 'next/font/local';
-import styled from 'styled-components';
+import React from "react";
+import localFont from "next/font/local";
+import styled from "styled-components";
 
-// Font files can be colocated inside of `app`
 const myFont = localFont({
-  src: './Dream_Orphans.otf',
-  display: 'swap'
+  src: "./Dream_Orphans.otf",
+  display: "swap",
 });
 
-export default function Title() {
+export default function Title({ text, destak }) {
   return (
-    <div className={myFont.className}>Esculpindo Labios Perfeitos</div>
-  )
+    <H1 destak={destak} className={myFont.className}>
+      {text}
+    </H1>
+  );
 }
 
 const H1 = styled.h1`
-    color: #fff;
-    font-size: 42pt;
-`
+  position: relative;
+  bottom: ${(props) => (props.destak ? "80px" : "36px")};
+  color: ${(props) => (props.destak ? "#CAB19D" : "#f7f1ed")};
+  font-size: 42pt;
+  @media (max-width: 740px) {
+    font-size: 30pt;
+  }
+`;
