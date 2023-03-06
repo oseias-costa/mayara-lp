@@ -15,7 +15,7 @@ export default function DescritptionStart() {
         Domine a técnica MMB e entregue lábios perfeitos mas acima de tudo, com
         resultados satisfatórios e naturais.
       </Text>
-      <Button />
+      <Button primary={true} href='#forWho'/>
     </DescritptionContainer>
   );
 }
@@ -29,18 +29,17 @@ const SubTitle = styled.p`
   font-weight: 600;
   font-size: 16pt;
   position: relative;
-  top: 15px;
+  top: 5px;
   @media (max-width: 740px) {
     font-size: 14px;
-    top: 0;
+    top: 7px;
   }
 `;
 
 const Text = styled.p`
   color: #f7f1ed;
   font-size: 16pt;
-  position: relative;
-  bottom: 100px;
+  padding-top: 20px;
   max-width: 400px;
   @media (max-width: 740px) {
     font-size: 12px;

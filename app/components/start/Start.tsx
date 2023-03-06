@@ -22,11 +22,6 @@ const StartSection = styled.section`
   flex-wrap: wrap;
 `;
 
-const StartStyled = styled.h1`
-  color: red;
-  background-color: yellow;
-`;
-
 const ImageStyle = styled(Image)`
   width: 400px;
   height: auto;

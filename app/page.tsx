@@ -1,12 +1,14 @@
 "use client";
-
-import { Inter } from "next/font/google";
 import Start from "./components/start/Start";
 import Header from "./components/header/Header";
 import ForWho from "./components/forWho/ForWho";
 import styled from "styled-components";
-
-const inter = Inter({ subsets: ["latin"] });
+import Pains from "./components/pains/Pains";
+import MakeLips from "./components/makeLips/MakeLips";
+import Benefits from "./components/benefits/Benefits";
+import Learn from "./components/learn/Learn";
+import Insecurity from "./components/insecurity/Insecurity";
+import Gift from "./components/gift/Gift";
 
 export default function Home() {
   return (
@@ -14,6 +16,12 @@ export default function Home() {
       <Header />
       <Start />
       <ForWho />
+      <Pains />
+      <MakeLips />
+      <Benefits />
+      <Learn />
+      <Insecurity />
+      <Gift />
     </Container>
   );
 }

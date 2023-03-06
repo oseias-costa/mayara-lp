@@ -1,4 +1,4 @@
-// import './globals.css'
+import './globals.css'
 import StyledComponentsRegistry from "./lib/registry";
 import { Quicksand } from "next/font/google";
 

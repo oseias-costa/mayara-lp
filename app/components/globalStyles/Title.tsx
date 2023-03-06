@@ -7,7 +7,12 @@ const myFont = localFont({
   display: "swap",
 });
 
-export default function Title({ text, destak }) {
+type TitleProps = {
+  text: String,
+  destak: boolean
+}
+
+export default function Title({ text, destak }: TitleProps) {
   return (
     <H1 destak={destak} className={myFont.className}>
       {text}
@@ -15,9 +20,7 @@ export default function Title({ text, destak }) {
   );
 }
 
-const H1 = styled.h1`
-  position: relative;
-  bottom: ${(props) => (props.destak ? "80px" : "36px")};
+const H1 = styled.h1<{destak: boolean}>`
   color: ${(props) => (props.destak ? "#CAB19D" : "#f7f1ed")};
   font-size: 42pt;
   @media (max-width: 740px) {
