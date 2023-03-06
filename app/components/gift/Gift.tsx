@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import styled from 'styled-components';
+import GiftCheck from './GiftCheck';
 import GiftTop from './GiftTop';
 
 export default function Gift() {
@@ -11,6 +12,7 @@ export default function Gift() {
             Como se não bastasse todo esse conteúdo sobre o método exclusivo Dra. Mayara Bechi, 
             você ainda receberá dois super bônus.
         </Text>
+        <GiftCheck />
     </GiftContainer>
   )
 }
