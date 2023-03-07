@@ -9,6 +9,7 @@ import Benefits from "./components/benefits/Benefits";
 import Learn from "./components/learn/Learn";
 import Insecurity from "./components/insecurity/Insecurity";
 import Gift from "./components/gift/Gift";
+import Warranty from "./components/warranty/Warranty";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Learn />
       <Insecurity />
       <Gift />
+      <Warranty />
     </Container>
   );
 }

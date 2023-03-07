@@ -5,6 +5,7 @@ import GiftCheck from "./GiftCheck";
 import GiftTop from "./GiftTop";
 import Image from "next/image";
 import Photo from "../../../public/mockups.png";
+import Price from "../price/Price";
 
 export default function Gift() {
   return (
@@ -16,6 +17,7 @@ export default function Gift() {
       </Text>
       <GiftCheck />
       <Img src={Photo} alt="Bônus Método Mayara Bechi" />
+      <Price />
     </GiftContainer>
   );
 }

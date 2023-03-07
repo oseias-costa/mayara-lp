@@ -15,7 +15,7 @@ export default function DescritptionStart() {
         Domine a técnica MMB e entregue lábios perfeitos mas acima de tudo, com
         resultados satisfatórios e naturais.
       </Text>
-      <Button primary={true} href='#forWho'/>
+      <Button primary={true} href="#forWho" content="Quero começar agora!" />
     </DescritptionContainer>
   );
 }
