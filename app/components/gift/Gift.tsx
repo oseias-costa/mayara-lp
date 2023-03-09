@@ -17,7 +17,6 @@ export default function Gift() {
       </Text>
       <GiftCheck />
       <Img src={Photo} alt="Bônus Método Mayara Bechi" />
-      <Price />
     </GiftContainer>
   );
 }

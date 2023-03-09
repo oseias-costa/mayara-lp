@@ -29,22 +29,40 @@ export default function Warranty() {
 const WarrantyContainer = styled.section`
   display: flex;
   padding: 80px;
-  align-itens: center;
+  align-items: center;
   justify-content: center;
+  @media (max-width: 740px) {
+    flex-direction: column;
+    padding: 30px;
+  }
 `;
 
 const Title = styled(TitleSection)`
   color: #f7f1ed;
+  @media (max-width: 740px) {
+    text-align: center;
+    font-size: 14pt;
+  }
 `;
 
 const Text = styled.p`
   padding-top: 20px;
   color: #f7f1ed;
   max-width: 600px;
+  @media (max-width: 740px) {
+    text-align: center;
+    font-size: 9pt;
+  }
 `;
 
 const Img = styled(Image)`
   width: 200px;
   height: 200px;
   margin-right: 40px;
+  @media (max-width: 740px) {
+    margin-right: 0;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+  }
 `;

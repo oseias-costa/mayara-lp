@@ -8,48 +8,77 @@ import Image from "next/image";
 
 export default function Price() {
   return (
-    <PriceContainer>
-      <TitleSection>Investimento</TitleSection>
-      <Destak>Por apenas 12x de</Destak>
-      <TitleSection>R$ 397,00</TitleSection>
-      <Destak>ou R$ 3497,00 à vista </Destak>
-      <Text>
-        Toque no botão abaixo e aproveite essa oportunidade enquanto ela está
-        disponível
-      </Text>
-      <Button
-        primary={true}
-        href="#"
-        content="Quero me tornar um especialista em lábios!"
-      />
-      <Image src={MethodsImg} alt="Métods de Pagamento Método Mayara Bechi" />
-    </PriceContainer>
+    <Container>
+      <PriceBody>
+        <Title>Investimento</Title>
+        <Destak>Por apenas 12x de</Destak>
+        <TitleSection>R$ 397,00</TitleSection>
+        <Destak>ou R$ 3497,00 à vista </Destak>
+        <Text>
+          Toque no botão abaixo e aproveite essa oportunidade enquanto ela está
+          disponível
+        </Text>
+        <Btn href="#">Quero me tornar um especialista em lábios!</Btn>
+        <Img src={MethodsImg} alt="Métods de Pagamento Método Mayara Bechi" />
+      </PriceBody>
+    </Container>
   );
 }
 
-const PriceContainer = styled.section`
-  text-align: center;
-  max-width: 700px;
+const Container = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f1ed;
+  padding: 20px;
+  padding-bottom: 40px;
+  border: none;
+`;
+
+const PriceBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(202, 177, 157, 0.25);
   border: 1px solid #cab19d;
   border-radius: 10px;
   padding: 70px;
   margin-top: 50px;
+  @media (max-width: 740px) {
+    width: auto;
+  }
+`;
+
+const Title = styled(TitleSection)`
+  &:nth-child(1) {
+    padding-bottom: 20px;
+  }
 `;
 
 const Destak = styled.p`
   color: #a08d80;
   font-weight: 600;
-  &:last-of-type {
-    padding-top: 50px;
+  &:nth-child(4) {
+    padding-bottom: 20px;
   }
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  max-width: 400px;
+  text-align: center;
+`;
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-itens: center;
-  justify-content: center;
+const Btn = styled(Button)`
+  position: relative;
+  top: 20px;
+  margin-bottom: 60px;
+`;
+
+const Img = styled(Image)`
+  filter: grayscale(100%);
+  // width: 400px;
+  @media (max-width: 740px) {
+    width: 174px;
+    height: 15px;
+  }
 `;
