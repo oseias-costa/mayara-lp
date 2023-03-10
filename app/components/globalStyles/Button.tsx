@@ -12,7 +12,7 @@ export default function Button({primary, href, content}: ButtonProp) {
   return <ButtonBody href={href} primary={primary}>{content}</ButtonBody>;
 }
 
-const ButtonBody = styled.a<{primary: Boolean}>`
+const ButtonBody = styled("a")<{primary: Boolean}>`
   background-color: ${props => props.primary ? '#cab19d' : '#030303' };
   color: ${props => props.primary ? '#030303' : '#f7f1ed' };
   font-weight: 600;
@@ -30,12 +30,12 @@ const ButtonBody = styled.a<{primary: Boolean}>`
   text-decoration: none;
 
   &:hover {
-    background-color: ${props => props.primary ? '#030303' : '#cab19d' };
+    background-color: transparent;
     color: ${props => props.primary ? '#cab19d' : '#030303' };
   }
 
   @media (max-width: 740px) {
-    font-size: 8pt;
+    font-size: 12pt;
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 5px;

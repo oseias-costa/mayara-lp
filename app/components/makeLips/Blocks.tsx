@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { data } from "./makeLipsData";
 
 type BlockContentData = {
-  id: Number;
-  content: String;
+  id: number;
+  content: string;
 };
 
 export default function Blocks() {

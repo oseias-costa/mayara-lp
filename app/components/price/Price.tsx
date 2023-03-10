@@ -5,6 +5,7 @@ import styled from "styled-components";
 import MethodsImg from "../../../public/methods.png";
 import Button from "../globalStyles/Button";
 import Image from "next/image";
+import ButtonPrice from "./ButtonPrice";
 
 export default function Price() {
   return (
@@ -18,7 +19,7 @@ export default function Price() {
           Toque no botão abaixo e aproveite essa oportunidade enquanto ela está
           disponível
         </Text>
-        <Btn href="#">Quero me tornar um especialista em lábios!</Btn>
+        <ButtonPrice href="#">Quero me tornar um especialista em lábios!</ButtonPrice>
         <Img src={MethodsImg} alt="Métods de Pagamento Método Mayara Bechi" />
       </PriceBody>
     </Container>
@@ -30,8 +31,8 @@ const Container = styled.section`
   align-items: center;
   justify-content: center;
   background-color: #f7f1ed;
-  padding: 20px;
   padding-bottom: 40px;
+  padding-top: 0;
   border: none;
 `;
 
@@ -45,7 +46,9 @@ const PriceBody = styled.div`
   padding: 70px;
   margin-top: 50px;
   @media (max-width: 740px) {
+    padding: 40px;
     width: auto;
+    margin: 5%;
   }
 `;
 

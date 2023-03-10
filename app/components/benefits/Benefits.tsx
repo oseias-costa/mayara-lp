@@ -6,7 +6,7 @@ import BenefitsContent from './BenefitsContent';
 
 export default function Benefits() {
   return (
-    <BenefitsContainer>
+    <BenefitsContainer id='Beneficios'>
       <Title>O que você vai adiquirir?</Title>
       <BenefitsContent />
     </BenefitsContainer>

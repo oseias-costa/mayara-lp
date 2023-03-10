@@ -16,7 +16,7 @@ export default function MakeLips() {
       </Text>
       <BeforeAndAfter />
       <Button
-        href="#"
+        href="#Beneficios"
         primary={false}
         content="Quero dominar o preenchimento labial!"
       />

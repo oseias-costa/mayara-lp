@@ -9,7 +9,7 @@ import Price from "../price/Price";
 
 export default function Gift() {
   return (
-    <GiftContainer>
+    <GiftContainer id="Presente">
       <GiftTop />
       <Text>
         Como se não bastasse todo esse conteúdo sobre o método exclusivo Dra.
@@ -24,7 +24,7 @@ export default function Gift() {
 const GiftContainer = styled.section`
   background-color: #f7f1ed;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

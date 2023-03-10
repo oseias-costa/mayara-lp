@@ -12,7 +12,7 @@ export default function InsecurityContent() {
         <Text>Conhecimento e confiança na sua técnica é o que te faz virar a chave de um profissional mediano para um especialista em esculpir lábios.</Text>
         <Subtitle>Os mínimos detalhes fazem a diferença, desde a:</Subtitle>
         <Checks />
-        <Button primary={false} href='#' content='Quero ter segurança ao fazer lábios!'/>
+        <Button primary={false} href='#Presente' content='Quero ter segurança ao fazer lábios!'/>
     </Container>
   )
 }
