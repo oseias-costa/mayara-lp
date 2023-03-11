@@ -22,6 +22,9 @@ export default function DescritptionStart() {
 
 const DescritptionContainer = styled.div`
   max-width: 450px;
+  @media (max-width: 740px){
+    text-align: center;
+  }
 `;
 
 const SubTitle = styled.p`
@@ -43,6 +46,6 @@ const Text = styled.p`
   max-width: 400px;
   @media (max-width: 740px) {
     font-size: 12px;
-    max-width: 200px;
+    padding: 20px;
   }
 `;

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../globalStyles/Button";
+import Subtitle from "../globalStyles/Subtitle";
 import { TitleSection } from "../globalStyles/TitleSection";
 import BeforeAndAfter from "./BeforeAndAfter";
 import Blocks from "./Blocks";
@@ -8,7 +9,7 @@ import Blocks from "./Blocks";
 export default function MakeLips() {
   return (
     <Container>
-      <Title>FAZER LÁBIOS NÃO É RECEITA DE BOLO!</Title>
+      <Subtitle fontSize={36} color='#030303'>Fazer lábios não é receita de bolo!</Subtitle>
       <Blocks />
       <Text>
         E a sua missão como profissional, é saber trabalhar de forma natural em

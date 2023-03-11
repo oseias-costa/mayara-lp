@@ -1,10 +1,11 @@
 "use client";
 import styled from "styled-components";
+import Subtitle from "../globalStyles/Subtitle";
 
 export default function ForWho() {
   return (
     <ForWhoContainer id="forWho">
-      <Title>Para quem é esse curso?</Title>
+      <Subtitle fontSize={28}>Para quem é esse curso?</Subtitle>
         <Text>
           Esse curso é para você profissional atuante na HOF que deseja ser reconhecida(o) 
           como referência em preenchimento labial na sua região, aumentar a procura por esse 
@@ -22,14 +23,14 @@ const ForWhoContainer = styled.section`
   padding-top: 80px
 `;
 
-const Title = styled.p`
+/* const Title = styled.p`
   color: #cab19d;
   font-size: 22pt;
   font-weight: 700;
   @media(max-width: 740px){
     font-size: 18pt;
   }
-`;
+`; */
 
 const Text = styled.p`
   text-align: center; 

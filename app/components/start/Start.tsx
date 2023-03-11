@@ -23,10 +23,10 @@ const StartSection = styled.section`
 `;
 
 const ImageStyle = styled(Image)`
-  width: 400px;
+  width: 450px;
   height: auto;
   @media (max-width: 740px) {
-    width: 250px;
+    width: 380px;
     height: auto;
   }
 `;
