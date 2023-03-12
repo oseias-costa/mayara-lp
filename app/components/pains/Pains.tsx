@@ -3,6 +3,8 @@ import React from 'react'
 import styled from 'styled-components';
 import PainContent from './PainContent';
 import SubtitlePains from './SubtitlePains';
+import Teste from '../../../public/pain/results_pain.png'
+import Image from 'next/image';
 
 export default function Pains() {
   return (

@@ -35,10 +35,9 @@ const ButtonBody = styled("a")<{primary: Boolean}>`
   }
 
   @media (max-width: 740px) {
+    text-align: center;
     font-size: 12pt;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    top: 5px;
+    width: 90%;
   }
 `;

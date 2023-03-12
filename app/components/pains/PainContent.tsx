@@ -1,47 +1,49 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 import { data } from './painsData'
-import PainSvg from './pain.svg'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 type dataContent = {
     id: number,
-    content: String
+    content: ReactNode,
+    icon: StaticImageData
 }
 
 export default function PainContent() {
     const blocksPain = data.map((item: dataContent)=> {
         return(
             <Block key={item.id}>
-                <Image src={PainSvg} alt='Bloco' width={20} />
-                <Text>{item.content}</Text>
+                <Img src={item.icon} alt='Bloco' />
+                {item.content}
             </Block>)
     })
     return <Container>{blocksPain}</Container>
 }
 
 const Container = styled.div`
+    background-color: rgba(202, 177, 157, 0.25); 
+    border: 1px solid #CAB19D;
     display: flex;
+    border-radius: 5px;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 600px;
+    justify-content: center;
+    margin: 20px;
+    max-width: 820px;
     @media(max-width: 740px){
         flex-direction: column;
         align-items: flex-start;
     }
     `
 
-const Block = styled.div`
-    display: flex;
-    max-width: 300px;
-    padding-top: 20px;
+const Img = styled(Image)`
+    width: 67px;
+    height: 60px;
 `
 
-const Text = styled.p`
-    padding-left: 10px;
-    color: #f7f1ed;
-    font-weight: 300;
-    font-size: 10pt;
-    position: relative;
-    bottom: 3px;
+const Block = styled.div`
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    padding: 28px;
 `

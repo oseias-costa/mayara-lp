@@ -6,9 +6,9 @@ import Subtitle from '../globalStyles/Subtitle';
 export default function SubtitlePains() {
   return (
     <Row>
-        <Subtitle fontSize={25} color='#f7f1ed'>É possível dar um</Subtitle> 
-        <Subtitle fontSize={25} color='#cab19d'>&nbsp;START&nbsp;</Subtitle> 
-        <Subtitle fontSize={25} color='#f7f1ed'>na sua carreira, se você:</Subtitle> 
+        <Subtitle fontSize={30} color='#f7f1ed'>É possível dar um</Subtitle> 
+        <Subtitle fontSize={30} color='#cab19d'>&nbsp;START&nbsp;</Subtitle> 
+        <Subtitle fontSize={30} color='#f7f1ed'>na sua carreira, se você:</Subtitle> 
     </Row>
   )
 }
