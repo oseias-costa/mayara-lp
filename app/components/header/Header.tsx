@@ -18,5 +18,4 @@ const HeaderStyle = styled.header`
     align-items: center;
     justify-content: center;
     height: 100px;
-    background-color: #030303;
 `

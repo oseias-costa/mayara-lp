@@ -47,3 +47,4 @@ const Block = styled.div`
     max-width: 400px;
     padding: 28px;
 `
+

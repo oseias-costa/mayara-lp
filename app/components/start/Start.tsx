@@ -16,7 +16,6 @@ export default function Start() {
 }
 
 const StartSection = styled.section`
-  background-color: #030303;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
