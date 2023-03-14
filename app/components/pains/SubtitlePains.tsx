@@ -1,16 +1,18 @@
 "use client";
-import React from 'react'
-import styled from 'styled-components';
-import Subtitle from '../globalStyles/Subtitle';
+import React from "react";
+import styled from "styled-components";
+import Subtitle from "../globalStyles/Subtitle";
+import TitleDestak from "../globalStyles/TitleDestak";
+import TitleDestakWhite from "./TitleDestakWhite";
 
 export default function SubtitlePains() {
   return (
     <Row>
-        <Subtitle fontSize={30} color='#f7f1ed'>É possível dar um</Subtitle> 
-        <Subtitle fontSize={30} color='#cab19d'>&nbsp;START&nbsp;</Subtitle> 
-        <Subtitle fontSize={30} color='#f7f1ed'>na sua carreira, se você:</Subtitle> 
+      <TitleDestak fontSize={30} text="É possível dar um" />
+      <TitleDestakWhite fontSize={30} text="&nbsp;START&nbsp;" />
+      <TitleDestak fontSize={30} text="na sua carreira, se você:" />
     </Row>
-  )
+  );
 }
 
 const Row = styled.div`
@@ -18,12 +20,12 @@ const Row = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-`
+`;
 
 const SubTitle = styled.p`
-    color: ${props => props.color};
-    display: inline;
-    font-size: 14pt;
-    font-weight: 500;
-    padding: 3px;
-`
+  color: ${(props) => props.color};
+  display: inline;
+  font-size: 14pt;
+  font-weight: 500;
+  padding: 3px;
+`;

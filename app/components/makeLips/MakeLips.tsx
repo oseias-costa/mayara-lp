@@ -5,12 +5,15 @@ import Subtitle from "../globalStyles/Subtitle";
 import { TitleSection } from "../globalStyles/TitleSection";
 import BeforeAndAfter from "./BeforeAndAfter";
 import Blocks from "./Blocks";
+import Photo from "./Photo";
 
 export default function MakeLips() {
   return (
     <Container>
-      <Subtitle fontSize={36} color='#030303'>Fazer lábios não é receita de bolo!</Subtitle>
-      <Blocks />
+      <Subtitle fontSize={36} color="#CAB19D">
+        Fazer lábios não é receita de bolo!
+      </Subtitle>
+      <Photo />
       <Text>
         E a sua missão como profissional, é saber trabalhar de forma natural em
         todas essas variáveis. É por isso que desenvolvi este treinamento!
@@ -26,7 +29,6 @@ export default function MakeLips() {
 }
 
 const Container = styled.section`
-  background-color: #e5d5ca;
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
@@ -36,7 +38,7 @@ const Container = styled.section`
 `;
 
 const Title = styled(TitleSection)`
-  color: #030303;
+  color: #fff;
   @media (max-width: 740px) {
     margin-left: 40px;
     margin-right: 40px;
@@ -45,6 +47,7 @@ const Title = styled(TitleSection)`
 `;
 
 const Text = styled.p`
+  color: #fff;
   text-align: center;
   max-width: 600px;
   padding-top: 25px;

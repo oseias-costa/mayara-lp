@@ -1,7 +1,6 @@
 "use client";
 import Start from "./components/start/Start";
 import Header from "./components/header/Header";
-import ForWho from "./components/forWho/ForWho";
 import styled from "styled-components";
 import Pains from "./components/pains/Pains";
 import MakeLips from "./components/makeLips/MakeLips";
@@ -17,7 +16,6 @@ export default function Home() {
     <Container>
       <Header />
       <Start />
-      <ForWho />
       <Pains />
       <MakeLips />
       <Benefits />
