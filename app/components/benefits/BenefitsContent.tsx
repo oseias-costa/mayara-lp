@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import BefefitsBlocks from "./BefefitsBlocks";
-import Img from "../../../public/benefits__img.png";
 import styled from "styled-components";
 import ContainerDestak from "../globalStyles/ContainerDestak";
 

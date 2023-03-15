@@ -8,7 +8,7 @@ const myFont = localFont({
 });
 
 type TitleProps = {
-  text: string,
+  text: number | string,
   fontSize: number
 }
 

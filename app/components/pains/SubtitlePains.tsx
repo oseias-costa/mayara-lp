@@ -20,6 +20,7 @@ const Row = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-bottom: 35px;
 `;
 
 const SubTitle = styled.p`

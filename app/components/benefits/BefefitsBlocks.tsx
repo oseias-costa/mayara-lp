@@ -1,19 +1,27 @@
 "use client";
 import React from 'react'
 import styled from 'styled-components';
+import TitleDestak from '../globalStyles/TitleDestak';
 import { data } from './benefitsData';
 
 type ItemData = {
     id: number,
-    content: String
+    content: string,
+    negrito: string
+    
 }
 
 export default function BefefitsBlocks() {
-    const block = data.map((item: ItemData) => {
+    const block = data.map((item : ItemData)  => {
         return(
             <BlockItem key={item.id}>
-                <Title>{'#'+item.id}</Title>
-                <Text>{item.content}</Text>
+                <NumberList>
+                    <TitleDestak fontSize={50} text={item.id} />
+                </NumberList>
+                <BlockText>
+                    <Negrito>{item.negrito}</Negrito>
+                    <Text>{item.content}</Text>
+                </BlockText>
             </BlockItem>
         )
     })
@@ -23,11 +31,7 @@ export default function BefefitsBlocks() {
 }
 
 const Container = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 900px;
-    justify-content: center;
-    padding-left: 150px;
+    padding: 45px;
     @media (max-width: 740px){
         padding-left: 0;
         max-width: auto;
@@ -38,14 +42,7 @@ const Container = styled.div`
 const BlockItem = styled.div`
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(202, 177, 157, 0.25);
-    border: 1px solid #CAB19D;
-    border-radius: 5px;
-    width: 300px;
-    height: 120px;
-    padding: 20px;
-    margin: 10px;
+    padding: 5px;
     @media (max-width: 740px){
         padding: 10px;
         display: block;
@@ -53,15 +50,30 @@ const BlockItem = styled.div`
     }
 `
 
+const NumberList = styled.div`
+    width: 80px;
+    text-align: center;
+`
+
+const BlockText = styled.div`
+    max-width: 300px;
+    padding-left: 20px;
+`
+
 const Text = styled.p`
     color: #F7F1ED;
-    padding-left: 20px;
+    font-size: 16pt;
+    display: inline;
     @media (max-width: 740px){
         padding-left: 0;
         padding-top: 5px;
         font-size: 10pt;
         text-align: center;
     }
+`
+
+const Negrito = styled(Text)`
+    font-weight: 600;
 `
 
 const Title = styled.p`

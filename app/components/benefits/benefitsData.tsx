@@ -1,22 +1,27 @@
 export const data = [
     {
         id: 1,
-        content: 'Diferenciação no mercado'
+        content: ' no mercado',
+        negrito: 'Diferenciação'
     },
     {
         id: 2,
-        content: 'Reconhecimento pelos resultados que entregará'
+        content: ' pelos resultados que entregará',
+        negrito: 'Reconhecimento'
     },
     {
         id: 3,
-        content: 'Confiança do público para realizar o procedimento'
+        content: ' do público para realizar o procedimento',
+        negrito: 'Confiança'
     },
     {
         id: 4,
-        content: 'Diferenciação no mercado'
+        content: ' no mercado',
+        negrito: 'Diferenciação'
     },
     {
         id: 5,
-        content: 'Reconhecimento pelos resultados que entregará'
+        content: ' pelos resultados que entregará',
+        negrito: 'Reconhecimento'
     },
 ]
