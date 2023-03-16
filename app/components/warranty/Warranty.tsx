@@ -2,13 +2,16 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import WarrantyImg from "../../../public/7days.png";
+import TitleDestak from "../globalStyles/TitleDestak";
 import { TitleSection } from "../globalStyles/TitleSection";
 
 export default function Warranty() {
   return (
     <WarrantyContainer>
-      <Img src={WarrantyImg} alt="7 dias de Garantia!" />
+      <Icon>
+        <TitleDestak fontSize={44} text="Garantia" />
+        <TitleDestak fontSize={44} text="7 dias" />
+      </Icon>
       <div>
         <Title>RISCO ZERO POR 7 DIAS</Title>
         <Text>
@@ -37,6 +40,14 @@ const WarrantyContainer = styled.section`
   }
 `;
 
+const Icon = styled.div`
+  padding: 60px;
+  @media (max-width: 740px) {
+    text-align: center;
+    padding: 40px;
+  }
+`;
+
 const Title = styled(TitleSection)`
   color: #f7f1ed;
   @media (max-width: 740px) {
@@ -52,17 +63,5 @@ const Text = styled.p`
   @media (max-width: 740px) {
     text-align: center;
     font-size: 9pt;
-  }
-`;
-
-const Img = styled(Image)`
-  width: 200px;
-  height: 200px;
-  margin-right: 40px;
-  @media (max-width: 740px) {
-    margin-right: 0;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 25px;
   }
 `;
