@@ -27,16 +27,6 @@ const Container = styled.div`
     color: #F7F1ED;
 `
 
-// const Title = styled(TitleSection)`
-//     color: #030303;
-//     font-size: 20pt;
-//     font-weight: 600;
-//     padding-bottom: 20px;
-//     @media(max-width: 740px){
-//         font-size: 17pt;
-//     }
-// `
-
 const Text = styled.p`
     font-size: 12pt;
     padding-bottom: 20px;

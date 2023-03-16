@@ -6,27 +6,22 @@ import GiftTop from "./GiftTop";
 import Image from "next/image";
 import Photo from "../../../public/mockups.png";
 import Price from "../price/Price";
+import GiftTitle from "./GiftTitle";
+import ListGift from "./ListGift";
 
 export default function Gift() {
   return (
     <GiftContainer id="Presente">
-      <GiftTop />
-      <Text>
-        Como se não bastasse todo esse conteúdo sobre o método exclusivo Dra.
-        Mayara Bechi, você ainda receberá dois super bônus.
-      </Text>
-      <GiftCheck />
-      <Img src={Photo} alt="Bônus Método Mayara Bechi" />
+      <GiftTitle />
+      <ListGift />
     </GiftContainer>
   );
 }
 
 const GiftContainer = styled.section`
-  background-color: #f7f1ed;
   padding-top: 60px;
   padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
