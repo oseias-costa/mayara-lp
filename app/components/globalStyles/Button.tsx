@@ -25,7 +25,6 @@ const Container = styled.div`
   padding: 1rem;
   position: relative;
   background: linear-gradient(180deg, #CAB19D 13.54%, rgba(202, 177, 157, 0.1) 100%);
-  /* background: linear-gradient(to right, red, purple); */
   padding: 5px;
   top: 25px;
   border-radius: 13px;
@@ -56,10 +55,8 @@ const ButtonBody = styled.div`
   cursor: pointer;
   font-size: 14pt;
   position: relative;
-  
   text-decoration: none;
-
-
+  
   &:hover {
     background-color: transparent;
     color:  '#cab19d';
@@ -72,7 +69,6 @@ const ButtonBody = styled.div`
     width: 90%;
   }
 `;
-
 
 const Text = styled.p`
     background: linear-gradient(180deg, #CAB19D 21.35%, rgba(202, 177, 157, 0.08) 100%);

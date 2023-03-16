@@ -14,11 +14,11 @@ export default function Pains() {
 }
 
 const PainsContainer = styled.section`
-  padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
   @media (max-width: 740px){
     padding: 20px;
   }

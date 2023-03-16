@@ -6,13 +6,12 @@ import TitleDestak from "../globalStyles/TitleDestak";
 import ButtonGrad from "../globalStyles/ButtonGrad";
 import styled from "styled-components";
 import MethodsImg from "../../../public/methods.png";
-import Button from "../globalStyles/Button";
 import Image from "next/image";
 
 export default function Price() {
   return (
     <Container>
-      <ContainerDestak>
+      <ContainerDestak size="auto">
         <PriceBody>
           <TitleDestak fontSize={44} text="Investimento" />
           <Destak>Por apenas 12x de</Destak>

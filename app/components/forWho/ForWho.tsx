@@ -22,15 +22,6 @@ const ForWhoContainer = styled.section`
   justify-content: center;
 `;
 
-/* const Title = styled.p`
-  color: #cab19d;
-  font-size: 22pt;
-  font-weight: 700;
-  @media(max-width: 740px){
-    font-size: 18pt;
-  }
-`; */
-
 const Text = styled.p`
   text-align: center; 
   font-size: 12pt;

@@ -25,6 +25,9 @@ const BenefitsContainer = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  @media (max-width: 740px){
+    padding-top: 0px;
+  }
 `;
 
 const Title = styled.div`

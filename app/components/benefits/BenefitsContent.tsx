@@ -6,7 +6,7 @@ import ContainerDestak from "../globalStyles/ContainerDestak";
 
 export default function BenefitsContent() {
   return (
-    <Content>
+    <Content size="auto">
       <BefefitsBlocks />
     </Content>
   );

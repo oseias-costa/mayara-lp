@@ -59,6 +59,9 @@ const Content = styled("div")<{ select: number; number: number }>`
   background-color: rgba(217, 217, 217, 0.12);
   opacity: ${(props) => (props.select === props.number ? "100%" : "0%")};
   height: ${(props) => (props.select === props.number ? "130px" : "0px")};
+  @media(max-width: 740px){
+    height: ${(props) => (props.select === props.number ? "160px" : "0px")};
+  }
 `;
 
 const ModuleNumber = styled.p`

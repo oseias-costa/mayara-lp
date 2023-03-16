@@ -5,26 +5,26 @@ import Photo from "../../../public/makelips/eachLips.png";
 import Image from "next/image";
 
 export default function Benefits() {
-  const size = window.screen.width > 740 
+  const size = window !== undefined && window.screen.width > 740 
 
   const sizes = {
     first : {
-      bottom: size ? '130px' : '30px',
-      right: size ? '50px' : '10px'
+      bottom: size ? '140px' : '30px',
+      right: size ? '70px' : '25px'
     },
     second : {
-      bottom: size ? '70px' : '20px',
-      right: size ? '10px' : '5px'
+      bottom: size ? '80px' : '15px',
+      right: size ? '50px' : '22px'
     },
     third : {
-      bottom: size ? '-10px' : '10px',
-      right: size ? '0px' : '-2px'
+      bottom: size ? '0px' : '0px',
+      right: size ? '40px' : '20px'
     }
   }
   
   return (
     <Container>
-      <Img src={Photo} alt="Cada lábio" />
+      <Img src={Photo} alt="Lábios - Método Mayara Bechi" />
       <TextsContainer>
         <Text bottom={sizes.first.bottom} right={sizes.first.right}>
           Cada lábio tem sua anatomia
@@ -43,6 +43,9 @@ export default function Benefits() {
 const Container = styled.div`
   display: flex;
   align-items: center;
+  @media(max-width: 740px){
+    padding-top: 25px;
+  }
 `;
 
 const TextsContainer = styled.div`
@@ -56,7 +59,7 @@ const Text = styled("p")<{ bottom: string; right: string }>`
   bottom: ${(props) => props.bottom};
   right: ${(props) => props.right};
   @media (max-width: 740px){
-    font-size: 11pt;
+    font-size: 10pt;
   }
 `;
 

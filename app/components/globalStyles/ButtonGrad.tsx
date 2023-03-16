@@ -2,7 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import ContainerDestak from "./ContainerDestak";
 
-export default function ButtonGrad({ text, href }) {
+ type ButtonGradProps = {
+  text: string
+  href: string
+ }
+
+export default function ButtonGrad({ text, href }: ButtonGradProps) {
   return (
     <Link href={href}>
       <Container>

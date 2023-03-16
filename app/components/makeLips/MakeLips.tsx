@@ -1,11 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../globalStyles/Button";
+import ButtonGrad from "../globalStyles/ButtonGrad";
 import Subtitle from "../globalStyles/Subtitle";
 import { TitleSection } from "../globalStyles/TitleSection";
 import BeforeAndAfter from "./BeforeAndAfter";
-import Blocks from "./Blocks";
-import Photo from "./Photo";
+import dynamic from "next/dynamic";
+
+const Photo = dynamic(() =>  import('./Photo'), {
+  ssr: false,
+});
 
 export default function MakeLips() {
   return (
@@ -19,10 +22,9 @@ export default function MakeLips() {
         todas essas variáveis. É por isso que desenvolvi este treinamento!
       </Text>
       <BeforeAndAfter />
-      <Button
+      <ButtonGrad
         href="#Beneficios"
-        primary={false}
-        content="Quero dominar o preenchimento labial!"
+        text="Quero dominar o preenchimento labial!"
       />
     </Container>
   );
@@ -35,6 +37,10 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  @media (max-width: 740px){
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `;
 
 const Title = styled(TitleSection)`
