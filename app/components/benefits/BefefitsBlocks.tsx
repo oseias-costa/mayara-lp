@@ -72,7 +72,7 @@ const Text = styled.p`
   @media (max-width: 740px) {
     padding-left: 0;
     padding-top: 5px;
-    font-size: 10pt;
+    font-size: 12pt;
     text-align: center;
   }
 `;

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+"use client";
+import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import { data } from "./learnData";
 
@@ -6,16 +7,16 @@ type LearnModulesProps = {
   id: number;
   title: string;
   content: string;
+  height: string
 };
 
 export default function LearnModules() {
-  const [selected, setSelected] = useState(1);
-
+  const [ selected, setSelected ] = useState(1);
+  
   const modulesCourse = data.map((item: LearnModulesProps) => {
     return (
-      <>
+      <div key={item.id}>
         <Module
-          key={item.id}
           onClick={() => setSelected(item.id)}
           select={selected}
           number={item.id}
@@ -23,12 +24,12 @@ export default function LearnModules() {
           <ModuleNumber>Módulo {item.id}</ModuleNumber>
           <Title>{item.title}</Title>
         </Module>
-        <Content select={selected} number={item.id}>
+        <Content select={selected} number={item.id} height={item.height}>
           <Text select={selected} number={item.id}>
             {item.content}
           </Text>
         </Content>
-      </>
+      </div>
     );
   });
   return <Container id="LearnModules">{modulesCourse}</Container>;
@@ -51,16 +52,16 @@ const Module = styled("div")<{ select: number; number: number }>`
     max-width: auto;
   }
 `;
-const Content = styled("div")<{ select: number; number: number }>`
+const Content = styled("div")<{ select: number; number: number; height: string }>`
   transition: all 0.3s ease;
   border: ${(props) =>
     props.select === props.number ? " 1px solid #CAB19D" : "0px"};
   max-width: 430px;
   background-color: rgba(217, 217, 217, 0.12);
   opacity: ${(props) => (props.select === props.number ? "100%" : "0%")};
-  height: ${(props) => (props.select === props.number ? "130px" : "0px")};
-  @media(max-width: 740px){
-    height: ${(props) => (props.select === props.number ? "160px" : "0px")};
+  height: ${(props) => (props.select === props.number ? 'auto' : "0px")};
+  @media(max-with: 740px){
+    height: ${(props) => (props.select === props.number ? "auto" : "0px")};
   }
 `;
 

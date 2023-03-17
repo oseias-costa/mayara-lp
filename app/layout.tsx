@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={quicksand.className}>
-      <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
