@@ -14,11 +14,7 @@ export default function LearnContent() {
 }
 
 const Container = styled.div`
-  display: flex;
-  flex-wrap: wrap;
   @media (max-width: 740px) {
-    align-items: center;
-    justify-content: center;
   }
 `;
 const Img = styled(Image)`
