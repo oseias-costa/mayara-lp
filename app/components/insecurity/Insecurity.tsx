@@ -23,6 +23,7 @@ const InsecurityContainer = styled.section`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 80px;
   @media (max-width: 740px) {
     padding-left: 20px;
     padding-right: 20px;

@@ -7,7 +7,7 @@ import LearnModules from "./LearnModules";
 export default function LearnContent() {
   return (
     <Container id="LearnContent">
-      <Img src={Photo} alt="O que você vai aprender no método Mayara Bechi" />
+      {/* <Img src={Photo} alt="O que você vai aprender no método Mayara Bechi" /> */}
       <LearnModules />
     </Container>
   );

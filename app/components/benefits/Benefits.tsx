@@ -26,6 +26,8 @@ const BenefitsContainer = styled.section`
   align-items: center;
   @media (max-width: 740px){
     padding-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 `;
 

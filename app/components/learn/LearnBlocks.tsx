@@ -27,6 +27,7 @@ export default function LearnBlocks() {
 const Container = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 1080px;
     padding-top: 40px;

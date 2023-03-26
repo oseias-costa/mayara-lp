@@ -16,8 +16,10 @@ export default function Learn() {
 
 const LearnContainer = styled.section`
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: #0C0B0B;
 `;

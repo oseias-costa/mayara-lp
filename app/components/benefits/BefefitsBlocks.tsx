@@ -30,9 +30,13 @@ export default function BefefitsBlocks() {
 const Container = styled.div`
   padding: 45px;
   @media (max-width: 740px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: auto;
     position: relative;
     top: -10px;
+    padding: 25px;
   }
 `;
 const BlockItem = styled.div`
