@@ -13,7 +13,8 @@ const dataImg = [Img1, Img2, Img3, Img4];
 
 export default function BeforeAndAfter() {
   const [ imageNumber, setImageNumber ] = useState(1)
-  const swiper: React.MutableRefObject<HTMLDivElement | null | undefined> = useRef()
+  const swiper = useRef<HTMLDivElement>(null)
+
 
   const BlockImg = dataImg.map((item: StaticImageData, index: number) => {
     return (
