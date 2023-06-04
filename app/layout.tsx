@@ -3,8 +3,8 @@ import StyledComponentsRegistry from "./lib/registry";
 import { Quicksand } from "next/font/google";
 
 export const metadata = {
-  title: "Método Mayara Bechi",
-  description: "Método Mayara Bechi",
+  title: "Técnica Exclusiva Mayara Bechi",
+  description: "Preenchimento e Escultura Labial - Domine a técnica MB e entregue lábios perfeitos mas acima de tudo, com resultados satisfatórios e naturais.",
 };
 const quicksand = Quicksand({
   weight: ["300", "400", "500", "700", "700"],
