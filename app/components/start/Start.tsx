@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import StartImg from "../../../public/start/start_new.png";
+import StartImg from "../../../public/start/mayara-new-start.png";
 import DescritptionStart from "./DescritptionStart";
 
 export default function Start() {
@@ -22,10 +22,13 @@ const StartSection = styled.section`
 `;
 
 const ImageStyle = styled(Image)`
-  width: 550px;
+  width: 450px;
   height: auto;
+  position: relative;
+  bottom: 50px;
+  z-index: 1;
   @media (max-width: 740px) {
-    width: 380px;
+    width: 360px;
     height: auto;
   }
 `;

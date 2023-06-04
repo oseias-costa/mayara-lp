@@ -11,11 +11,11 @@ import ButtonStart from "./ButtonStart";
 export default function DescritptionStart() {
   return (
     <DescritptionContainer>
-      <SubTitle>MÉTODO MAYARA BECHI</SubTitle>
-      <Title text="Esculpindo Lábios" destak={false} fontSize={48} />
-      <TitleDestak text="Perfeitos" fontSize={48}/>
+      <SubTitle>TÉCNICA EXCLUSIVA MAYARA BECHI</SubTitle>
+      <Title text="Preenchimento e" destak={false} fontSize={48} />
+      <TitleDestak text="Escultura Labial" fontSize={48}/>
       <Text>
-        Domine a técnica MMB e entregue lábios perfeitos mas acima de tudo, com
+        Domine a técnica MB e entregue lábios perfeitos mas acima de tudo, com
         resultados satisfatórios e naturais.
       </Text>
       <ButtonStart />
@@ -30,18 +30,19 @@ const DescritptionContainer = styled.div`
     text-align: center;
     margin-top: 0px;
     position: relative;
-    bottom: 80px;
+    bottom: 100px;
+    z-index: 2;
   }
 `;
 
 const SubTitle = styled.p`
   color: #f7f1ed;
   font-weight: 600;
-  font-size: 20pt;
+  font-size: 18pt;
   position: relative;
   top: 5px;
   @media (max-width: 740px) {
-    font-size: 20px;
+    font-size: 18px;
     top: 7px;
   }
 `;

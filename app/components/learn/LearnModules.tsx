@@ -56,7 +56,7 @@ const Block = styled("div")`
   width: 250px;
 `;
 
-const Module = styled("p")<{ select: number; idModule: number }>`
+const Module = styled("div")<{ select: number; idModule: number }>`
   display: ${(props) => (props.select === props.idModule ? "none" : "flex")};
   flex-direction: column;
   align-items: center;

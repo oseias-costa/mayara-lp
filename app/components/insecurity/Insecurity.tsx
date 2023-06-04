@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import Photo from "../../../public/insecurity/lips.png";
+import Photo from "../../../public/insecurity/insecurity-new.png";
 import InsecurityContent from "./InsecurityContent";
 
 export default function Insecurity() {

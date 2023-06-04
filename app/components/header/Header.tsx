@@ -18,4 +18,6 @@ const HeaderStyle = styled.header`
     align-items: center;
     justify-content: center;
     height: 100px;
+    position: relative;
+    z-index: 10;
 `
