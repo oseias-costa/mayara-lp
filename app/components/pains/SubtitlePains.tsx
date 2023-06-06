@@ -8,9 +8,9 @@ import TitleDestakWhite from "./TitleDestakWhite";
 export default function SubtitlePains() {
   return (
     <Row>
-      <TitleDestak fontSize={30} text="É possível dar um" />
-      <TitleDestakWhite fontSize={30} text="&nbsp;START&nbsp;" />
-      <TitleDestak fontSize={30} text="na sua carreira, se você:" />
+      <TitleDestak fontSize={27} text="É possível dar um" />
+      <TitleDestakWhite fontSize={27} text="&nbsp;START&nbsp;" />
+      <TitleDestak fontSize={27} text="na sua carreira mesmo se você:" />
     </Row>
   );
 }

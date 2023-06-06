@@ -30,7 +30,7 @@ const DescritptionContainer = styled.div`
     text-align: center;
     margin-top: 0px;
     position: relative;
-    bottom: 100px;
+    bottom: 200px;
     z-index: 2;
   }
 `;

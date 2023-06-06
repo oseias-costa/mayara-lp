@@ -25,7 +25,8 @@ const ImageStyle = styled(Image)`
   width: 450px;
   height: auto;
   position: relative;
-  bottom: 50px;
+  bottom: 90px;
+  right: 70px;
   z-index: 1;
   @media (max-width: 740px) {
     width: 360px;

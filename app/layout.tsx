@@ -1,6 +1,7 @@
 import './globals.css'
 import StyledComponentsRegistry from "./lib/registry";
 import { Quicksand } from "next/font/google";
+import Meta from './lib/Meta';
 
 export const metadata = {
   title: "Técnica Exclusiva Mayara Bechi",
@@ -20,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className={quicksand.className}>
+      <Meta />
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>

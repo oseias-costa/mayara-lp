@@ -14,13 +14,13 @@ export const data = [
         content: ' do público para realizar o procedimento',
         negrito: 'Confiança'
     },
+    // {
+    //     id: 4,
+    //     content: ' no mercado',
+    //     negrito: 'Diferenciação'
+    // },
     {
         id: 4,
-        content: ' no mercado',
-        negrito: 'Diferenciação'
-    },
-    {
-        id: 5,
         content: ' pelos resultados que entregará',
         negrito: 'Reconhecimento'
     },

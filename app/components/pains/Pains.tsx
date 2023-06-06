@@ -20,6 +20,9 @@ const PainsContainer = styled.section`
   justify-content: center;
   
   @media (max-width: 740px){
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    bottom: 60px;
   }
 `;

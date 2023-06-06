@@ -56,28 +56,28 @@ export const data = [
     background: Back5,
     icon: Icon5,
   },
+  // {
+  //   id: 6,
+  //   title: "Preenchimento Labial em Homens",
+  //   content:
+  //     " Sim! Muitos homens são adeptos ao preenchimento labial. Nesse módulo você aprenderá qual técnica utilizar e o que evitar nesses casos.",
+  //   background: Back6,
+  //   icon: Icon6,
+  // },
   {
     id: 6,
-    title: "Preenchimento Labial em Homens",
-    content:
-      " Sim! Muitos homens são adeptos ao preenchimento labial. Nesse módulo você aprenderá qual técnica utilizar e o que evitar nesses casos.",
-    background: Back6,
-    icon: Icon6,
-  },
-  {
-    id: 7,
-    title: "Lábios Maduros",
-    content:
-      "Esse tipo de lábio merece uma atenção especial e delicada.  Vou te ensinar a preencher lábios maduros, geralmente com flacidez e finos e ter um resultado incrível, natural e sem aspecto de “bico de pato”.",
-    background: Back7,
-    icon: Icon7,
-  },
-  {
-    id: 8,
     title: "Intercorrência nos lábios",
     content:
       "Possíveis intercorrências nessa região e como intervir em cada uma delas de forma segura e eficaz.",
     background: Back8,
     icon: Icon8,
+  },
+  {
+    id: 7,
+    title: "Demonstração em paciente",
+    content:
+      "Você ainda vai acompanhar casos demonstrativos da técnica MB”.",
+    background: Back7,
+    icon: Icon7,
   },
 ];

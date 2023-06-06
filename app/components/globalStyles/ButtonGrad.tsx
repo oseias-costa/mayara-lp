@@ -35,14 +35,15 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     #cab19d 21.35%,
     rgba(202, 177, 157, 0.08) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background-clip: text; */
+  color: #fff;
   padding-left: 11px;
   padding-right: 11px;
   padding-top: 7px;
@@ -50,4 +51,7 @@ const Text = styled.p`
   font-weight: 600;
   font-size: 14pt;
   text-align: center;
+  @media(max-width: 740px){
+      font-size: 16pt;
+    }
 `;
