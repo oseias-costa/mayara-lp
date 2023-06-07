@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import Logo from '../../../public/logo.svg'
+import Logo from '../../../public/start/logo-dark2.svg'
 import styled from 'styled-components'
 
 export default function Header() {
@@ -14,10 +14,12 @@ export default function Header() {
 }
 
 const HeaderStyle = styled.header`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    position: relative;
+    left: 48%;
+    top: -30px;
+    position: absolute;
     z-index: 10;
+    @media (max-width: 740px){
+      left: 58%;
+
+    }
 `

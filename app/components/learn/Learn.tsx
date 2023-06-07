@@ -1,14 +1,16 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
-import TitleDestak from "../globalStyles/TitleDestak";
+import SubtitleBlocks from "../globalStyles/SubtitleBlocks";
 import LearnContent from "./LearnContent";
 
 
 export default function Learn() {
   return (
     <LearnContainer>
-      <TitleDestak fontSize={30} text="Tudo que você irá Aprender" />
+      <SubtitleBlocks fontSize={30} color="#CAB19D">
+        Tudo que você irá Aprender
+      </SubtitleBlocks>
       <LearnContent />
     </LearnContainer>
   );

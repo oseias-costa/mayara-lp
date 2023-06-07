@@ -15,8 +15,6 @@ export default function ButtonStart() {
 }
 
 const Link = styled.a`
-    position: relative;
-    top: 25px;
     cursor: pointer;
     transition: 0.3 linear; 
    
@@ -26,8 +24,8 @@ const Link = styled.a`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     @media (max-width: 740px){
       width: auto;
-      padding-left: 30px;
-      padding-right: 30px;
+      /* padding-left: 5px;
+      padding-right: 5px; */
     }
 
  `
@@ -48,5 +46,7 @@ const Text = styled.p`
 
     @media(max-width: 740px){
       font-size: 16pt;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 `

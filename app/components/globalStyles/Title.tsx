@@ -10,7 +10,7 @@ const myFont = localFont({
 type TitleProps = {
   text: string,
   destak: boolean,
-  fontSize: number
+  fontSize?: number
 }
 
 export default function Title({ text, destak, fontSize }: TitleProps) {
@@ -21,10 +21,10 @@ export default function Title({ text, destak, fontSize }: TitleProps) {
   );
 }
 
-const H1 = styled.h1<{destak: boolean, fontSize: number}>`
+const H1 = styled.h1<{destak: boolean, fontSize?: number}>`
   color: ${(props) => (props.destak ? "#CAB19D" : "#f7f1ed")};
   font-size: ${(props) => (props.fontSize ? `${props.fontSize}pt` : '42pt')};
   @media (max-width: 740px) {
-    font-size: ${(props) => (props.fontSize ? `${props.fontSize - 6}pt` : '36pt')};
+    font-size: ${(props) => (props.fontSize ? `${props.fontSize - 15}pt` : '32pt')};
   }
 `;

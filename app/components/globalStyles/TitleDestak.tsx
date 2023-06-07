@@ -27,6 +27,6 @@ const H1 = styled.h2<{ fontSize: number}>`
     -webkit-text-fill-color: transparent;
     background-clip: text;
   @media (max-width: 740px) {
-    font-size: ${(props) => (props.fontSize ? `${props.fontSize - 6}pt` : '36pt')};
+    font-size: ${(props) => (props.fontSize ? `${props.fontSize - 15}pt` : '32pt')};
   }
 `;

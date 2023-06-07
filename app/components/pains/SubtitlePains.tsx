@@ -1,16 +1,14 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
-import Subtitle from "../globalStyles/Subtitle";
-import TitleDestak from "../globalStyles/TitleDestak";
-import TitleDestakWhite from "./TitleDestakWhite";
+import SubtitleBlocks from "../globalStyles/SubtitleBlocks";
 
 export default function SubtitlePains() {
   return (
     <Row>
-      <TitleDestak fontSize={27} text="É possível dar um" />
-      <TitleDestakWhite fontSize={27} text="&nbsp;START&nbsp;" />
-      <TitleDestak fontSize={27} text="na sua carreira mesmo se você:" />
+      <SubtitleBlocks fontSize={30} color="#CAB19D">
+      É possível dar um START na sua carreira mesmo se você:
+      </SubtitleBlocks>
     </Row>
   );
 }

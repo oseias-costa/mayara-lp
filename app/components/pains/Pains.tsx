@@ -18,11 +18,11 @@ const PainsContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 70px;
   
   @media (max-width: 740px){
     padding-left: 20px;
     padding-right: 20px;
-    position: relative;
-    bottom: 60px;
+    padding-top: 50px;
   }
 `;

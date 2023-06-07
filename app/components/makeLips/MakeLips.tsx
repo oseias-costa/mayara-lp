@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ButtonGrad from "../globalStyles/ButtonGrad";
-import Subtitle from "../globalStyles/Subtitle";
+import SubtitleBlocks from "../globalStyles/SubtitleBlocks";
 import { TitleSection } from "../globalStyles/TitleSection";
 import BeforeAndAfter from "./BeforeAndAfter";
 import dynamic from "next/dynamic";
@@ -13,9 +13,9 @@ const Photo = dynamic(() =>  import('./Photo'), {
 export default function MakeLips() {
   return (
     <Container>
-      <Subtitle fontSize={36} color="#CAB19D">
+      <SubtitleBlocks fontSize={36} color="#CAB19D">
         Fazer lábios não é receita de bolo!
-      </Subtitle>
+      </SubtitleBlocks>
       <Photo />
       <Text>
         E a sua missão como profissional, é saber trabalhar de forma natural em
