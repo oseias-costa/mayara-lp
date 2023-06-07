@@ -30,9 +30,7 @@ export default function BeforeAndAfter() {
         <div className='swiper' ref={swiper}>
         {BlockImg}
         </div>
-
         <Buttons>
-
         <a onClick={() => {
           if(swiper && swiper.current){
             swiper.current.scrollLeft -= 1000

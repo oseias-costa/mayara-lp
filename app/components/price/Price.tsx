@@ -7,6 +7,7 @@ import ButtonGrad from "../globalStyles/ButtonGrad";
 import styled from "styled-components";
 import MethodsImg from "../../../public/methods.png";
 import Image from "next/image";
+import { dataGlobal } from "../globalStyles/_data";
 
 export default function Price() {
   return (
@@ -29,7 +30,7 @@ export default function Price() {
             está disponível
           </Text>
           <ButtonGrad
-            href="#"
+            href={dataGlobal.checkout}
             text="Quero me tornar um especialista em lábios!"
           />
           <Img src={MethodsImg} alt="Métods de Pagamento Método Mayara Bechi" />

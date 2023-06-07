@@ -5,6 +5,7 @@ import SubtitleBlocks from "../globalStyles/SubtitleBlocks";
 import { TitleSection } from "../globalStyles/TitleSection";
 import BeforeAndAfter from "./BeforeAndAfter";
 import dynamic from "next/dynamic";
+import { dataGlobal } from "../globalStyles/_data";
 
 const Photo = dynamic(() =>  import('./Photo'), {
   ssr: false,
@@ -23,7 +24,7 @@ export default function MakeLips() {
       </Text>
       <BeforeAndAfter />
       <ButtonGrad
-        href="#Beneficios"
+        href={dataGlobal.checkout}
         text="Quero dominar o preenchimento labial!"
       />
     </Container>

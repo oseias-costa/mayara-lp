@@ -1,15 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import ContainerDestak from '../globalStyles/ContainerDestak'
+import { dataGlobal } from '../globalStyles/_data'
 
 export default function ButtonStart() {
   return (
-    <Link>
-        <Container>
-        <ContainerDestak size='auto'>
-            <Text>Quero começar agora!</Text>
-        </ContainerDestak>
-        </Container>
+    <Link 
+      href={dataGlobal.checkout}
+      target='_blank'
+    >
+      <Container>
+      <ContainerDestak size='auto'>
+        <Text>Quero começar agora!</Text>
+      </ContainerDestak>
+      </Container>
     </Link>
   )
 }
@@ -17,7 +21,7 @@ export default function ButtonStart() {
 const Link = styled.a`
     cursor: pointer;
     transition: 0.3 linear; 
-   
+    text-decoration: none;
 `
  const Container = styled.div`
     width: 250px;

@@ -9,7 +9,7 @@ import ContainerDestak from "./ContainerDestak";
 
 export default function ButtonGrad({ text, href }: ButtonGradProps) {
   return (
-    <Link href={href}>
+    <Link href={href} target='_blank'>
       <Container>
         <ContainerDestak size="auto">
           <Text>{text}</Text>
